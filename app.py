@@ -46,7 +46,6 @@ def start_bot():
   bot_logs = ["[INFO] Starting Telegram Bot...\n"]
 
   try:
-    # টেলিগ্রাম বটের কোডের জন্য প্রয়োজনীয় লাইব্রেরি যেমন requests, python-telegram-bot ইত্যাদি থাকতে হবে
     bot_process = subprocess.Popen(
         ["python", bot_filename],
         stdout=subprocess.PIPE,
@@ -190,6 +189,5 @@ HTML_TEMPLATE = """
 """
 
 if __name__ == "__main__":
-  # রেন্ডার সার্ভারের নিজস্ব পোর্ট ধরার জন্য os.environ.get ব্যবহার করা হলো
   port = int(os.environ.get("PORT", 5000))
   app.run(host="0.0.0.0", port=port)
