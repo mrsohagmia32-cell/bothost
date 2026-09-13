@@ -1,0 +1,8 @@
+​Flask
+requests
+python-telegram-bot
+pyrogram
+telethon
+aiohttp
+certifi
+urllib3
